@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.fan-rotate1 {
+  animation: fan1 2s linear infinite;
+}
+.on {
+  animation: fan1 7s linear infinite;
+}
+.fan-rotate2 {
+  animation: fan1 0.8s linear infinite;
+}
+.fan-rotate3 {
+  animation: fan1 0.2s linear infinite;
+}
+@keyframes fan1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+img {
+  width: 600px;
+}
+.btn,
+.btn3,
+.btnon {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  color: aliceblue;
+  font-size: 20px;
+}
+.btn2 {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  color: aliceblue;
+  font-size: 20px;
+}
+.btnstop {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  color: aliceblue;
+  font-size: 20px;
+}

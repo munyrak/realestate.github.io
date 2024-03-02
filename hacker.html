@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacker Background</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      align-items: center;
+    }
+
+    .hacker-background {
+      background-color: #000;
+      color: rgb(77, 255, 0);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .hacker-text {
+      text-align: center;
+    }
+
+    @keyframes animate-code {
+      0% {
+        content: "";
+      }
+      50% {
+        content: "**************";
+      }
+      100% {
+        content: "";
+      }
+    }
+
+    .hacker-text::after {
+      content: "";
+      animation: animate-code 1s infinite;
+    }
+  </style>
+  <body>
+    <div class="hacker-background">
+      <div class="hacker-text">
+        <h1>Account is Hack</h1>
+        <p>Hacking in progress...</p>
+      </div>
+    </div>
+  </body>
+</html>
